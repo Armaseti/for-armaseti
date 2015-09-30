@@ -1,4 +1,5 @@
 scriptRequest('http://freegeoip.net/json/', ip_data_succ, ip_data_fail);
+function CookieCheker(){
 //--------------------------------------------
 var QueryString = function () {    
   var query_string = {};
@@ -340,3 +341,4 @@ if (QueryString.source != undefined){
 			setCookie('source',getCookie('source'), {"expires" : Date.now()+‪2419200000‬ } );
 		}	
 	}
+}
