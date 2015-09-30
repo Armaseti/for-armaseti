@@ -1,4 +1,5 @@
-//------------------парс адресной строки----------------
+scriptRequest('http://freegeoip.net/json/', ip_data_succ, ip_data_fail);
+//--------------------------------------------
 var QueryString = function () {    
   var query_string = {};
   var query = window.location.search.substring(1);
@@ -102,7 +103,7 @@ switch (param) { // распределяет ссылки и значения д
   	var ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRT28tRW1BbFBnRGM";
   	var ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRS1I4bzZSak80ajg";
   	break;
-  //---------------------------------------
+  /*---------------------------------------*/
   case 'krasnoyarsk':
     var telef="+7(913)396-63-09";
   	var mail="arma-seti@yandex.com";
@@ -145,7 +146,7 @@ switch (param) { // распределяет ссылки и значения д
   	var ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWnllUjdsV0gyR3M";
   	var ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM3Utb204T0JMeEU";
   	break;
-   //---------------------------------------
+   /*---------------------------------------*/
  default:
     var telef="+7(383)209-56-40";
   	var mail="armaseti-opt@yandex.ua";
@@ -154,9 +155,9 @@ switch (param) { // распределяет ссылки и значения д
   	var ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1lia0ZiVEJyczA";
 };}
 
-//----------------------------------------------------------
+//--------------------------------------------
 
-//------------------парс данных по ip------------------------------
+//--------------------------------------------
 var data_from_ip = {"ip":"","country_code":"","country_name":"","region_code":"","region_name":"","city":"","zip_code":"","time_zone":"","latitude":"","longitude":"","metro_code":""};
 var company;
 var CallbackRegistry = {};
@@ -191,9 +192,9 @@ function scriptRequest(url, onSuccess, onError) {
 function ip_data_succ(data) {data_from_ip = data; company = whatcompany(data)} ;
 function ip_data_fail(){company = "Армасети"};
 scriptRequest('http://freegeoip.net/json/', ip_data_succ, ip_data_fail);
-//--------------------------------------------------------------------
+//--------------------------------------------
 
-//---------------операционные функции--------------------------------
+//--------------------------------------------
 function emailAddressValid(emailAddress) {
     var pattern = new RegExp(/^(("[\w-+\s]+")|([\w-+]+(?:\.[\w-+]+)*)|("[\w-+\s]+")([\w-+]+(?:\.[\w-+]+)*))(@((?:[\w-+]+\.)*\w[\w-+]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][\d]\.|1[\d]{2}\.|[\d]{1,2}\.))((25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\.){2}(25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\]?$)/i);
     return pattern.test(emailAddress);
