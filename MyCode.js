@@ -1,4 +1,3 @@
-scriptRequest('http://freegeoip.net/json/', ip_data_succ, ip_data_fail);
 function CookieCheker(){
 //--------------------------------------------
 var QueryString = function () {    
