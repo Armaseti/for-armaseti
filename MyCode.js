@@ -264,9 +264,9 @@ function mcupdate(){
     }).then(function(response) {return response}).then(function(user) {return user})
   .catch( console.log);
 } 
-function mcsub(block-id,name_widget, mail_widget){
-	var	mcfname = $(block-id).find('input[name="+'name_widget'+"]').val(); 
-	var mcemail = $(block-id).find('input[name="+'mail_widget'+"]').val(); 
+function mcsub(block_id,name_widget, mail_widget){
+	var	mcfname = $(block_id).find('input[name="+'name_widget'+"]').val(); 
+	var mcemail = $(block_id).find('input[name="+'mail_widget'+"]').val(); 
 	var company = whatcompany(data_from_ip);
 	fetch('https://us11.api.mailchimp.com/2.0/lists/subscribe', {
 		  mode: 'no-cors',
