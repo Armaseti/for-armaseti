@@ -286,7 +286,7 @@ function mcsub(block_id,name_widget, mail_widget){
 				"MERGE5": data_from_ip.city,
 				"MERGE6": data_from_ip.region_name,
 				"MERGE7": data_from_ip.time_zone,
-				"MERGE8": company;
+				"MERGE8": company,
 				"mc_language": "ru",
 			}, 
 			"double_optin": false,
