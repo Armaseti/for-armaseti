@@ -333,9 +333,9 @@ function setCookie(name, value, options) {
 }
 
 if (QueryString.source != undefined){
-	setCookie('source',QueryString.source, {"expires" : Date.now()+‪2419200000‬ })}
+	setCookie('source',QueryString.source, )}
 	else {
 		if (getCookie('source') != "none"){
-			setCookie('source',getCookie('source'), {"expires" : Date.now()+‪2419200000‬ } );
+			setCookie('source',getCookie('source'),  );
 		}	
 	}
