@@ -333,9 +333,9 @@ function setCookie(name, value, options) {
 }
 
 if (QueryString.source != undefined){
-	setCookie('source',QueryString.source, )}
+	setCookie('source',QueryString.source )}
 	else {
 		if (getCookie('source') != "none"){
-			setCookie('source',getCookie('source'),  );
+			setCookie('source',getCookie('source') );
 		}	
 	}
