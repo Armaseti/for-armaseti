@@ -1,4 +1,3 @@
-function CookieCheker(){
 //--------------------------------------------
 var QueryString = function () {    
   var query_string = {};
@@ -340,4 +339,4 @@ if (QueryString.source != undefined){
 			setCookie('source',getCookie('source'), {"expires" : Date.now()+‪2419200000‬ } );
 		}	
 	}
-}
+
