@@ -1,1 +1,1 @@
-console.log("fuckin profit");
+console.log("fuckin profit from work-ver");
