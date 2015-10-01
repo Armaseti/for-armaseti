@@ -413,23 +413,5 @@ switch (QueryString.utm_source){
 	break;
 };
 };
- jq_181(function($){// отвечает за создание поп-ап формы и его активации
-var form1='#block-new311'; /* Блок с текстом */
-var form_butt1 = '#block-new312';
-var button1 = '#block-new158';
-/*-------------------------------------------*/
-$('body').append('<div class="simple_overlay_p" id="overlay1"></div>');/* слздал блок с крестом*/
-$('#overlay1').append($(form1).css('position', 'static').css('margin','auto'));  
-$('#overlay1').append($(form_butt1).css('position', 'absolute').css('margin','auto').css('top','140px').css('left','70px'));
-$('#overlay1').hide();
-$('#overlay1').overlay({ top: '10%', mask: { color:'#000', opacity:.5 } });
-$('.overlay_block, .simple_overlay_p')
-.css({ 'max-height': $(window).height() * 0.7 + 'px'});
-/*-------------------------------------------*/
-$(button1).click(function(e){
-    bpress= this.id;
-    if (showpopup == 1){
-		e.preventDefault();
-		$('#overlay1').overlay().load();
-		}else { gotohell(bpress)};});
-});
+
+
