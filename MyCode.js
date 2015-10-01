@@ -118,12 +118,9 @@ switch (param) { // распределяет ссылки и значения д
   ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUW1UTmhWR0lkMm8";
   ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1lia0ZiVEJyczA";
 };
-console.log("параметры определены"); 
 jq_144(function(){ // втавляет данные в форму страницы
-  console.log("изменение интерфейса"); 
   jq_144('#tel_text').append(telef);
   	jq_144('#mail_text').append(mail);
-  console.log("изменение done"); 
 });	
 	
 }
@@ -347,7 +344,6 @@ if (QueryString.source){
   			else {setCookie('source',whatsource(data_from_ip), {expires: lifetime.toUTCString()} );}
 	}
 SetInterface(getCookie('source'));
-console.log("установка интерфейса");
 
 if (QueryString.mcmail){mcupdate()};
 
@@ -355,7 +351,6 @@ if (QueryString.utm_source){
 switch (QueryString.utm_source){
 	case "direct":
 	yaCounter31701781.reachGoal('direct');
-      console.log("profit");
 	break;
 	case "rsya":
 	yaCounter31701781.reachGoal('rsya');
