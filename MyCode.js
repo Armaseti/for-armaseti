@@ -349,7 +349,6 @@ jq_144(function(){ // втавляет данные в форму страниц
 });
 if (QueryString.mcmail){mcupdate()};
 
-window.onload = function() {
 if (QueryString.utm_source){
 switch (QueryString.utm_source){
 	case "direct":
@@ -402,4 +401,4 @@ switch (QueryString.utm_source){
 	break;
 };
 };
- }
+ 
