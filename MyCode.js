@@ -341,6 +341,12 @@ if (QueryString.source){
 	}
 SetInterface(getCookie('source'));
 console.log("установка интерфейса");
+jq_144(function(){ // втавляет данные в форму страницы
+  console.log("interf append"); 
+  jq_144('#tel_text').append(telef);
+  	jq_144('#mail_text').append(mail);
+  
+});
 if (QueryString.mcmail){mcupdate()};
 
 window.onload = function() {
