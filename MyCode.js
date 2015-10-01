@@ -303,7 +303,11 @@ function mcsub(block_id,name_widget, mail_widget){
 		})
     });}
 }
-
+function deleteCookie(name) {
+  setCookie(name, "", {
+    expires: -1
+  })
+}
 function getCookie(name) {
   var matches = document.cookie.match(new RegExp(
     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -341,7 +345,8 @@ function setCookie(name, value, options) {
 var life_time_source = new Date(new Date().getTime() + 30*24*60*60 * 1000);
 var life_time_mail = new Date(new Date().getTime() + 3*24*60*60 * 1000);
 if (QueryString.source){
-  setCookie('source',QueryString.source, {expires: life_time_source.toUTCString()})
+	deleteCookie('source');	
+	setCookie('source',QueryString.source, {expires: life_time_source.toUTCString()});
 	}
   else {
 		if (getCookie('source') != "none"){
@@ -352,8 +357,8 @@ if (QueryString.source){
 SetInterface(getCookie('source'));
 
 if (QueryString.mcmail){
-	setCookie('from_mail','yepi', {expires: life_time_mail.toUTCString()} )};
-	mcupdate();
+	setCookie('from_mail','yepi', {expires: life_time_mail.toUTCString()} );
+	mcupdate();}
 if (getCookie('from_mail') == 'yepi'){showpopup=0};
 	
 
