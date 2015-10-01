@@ -346,18 +346,18 @@ var life_time_source = new Date(new Date().getTime() + 30*24*60*60 * 1000);
 var life_time_mail = new Date(new Date().getTime() + 3*24*60*60 * 1000);
 if (QueryString.source){
 	deleteCookie('source');	
-	setCookie('source',QueryString.source, {expires: life_time_source.toUTCString()});
+	setCookie('source',QueryString.source, {expires: life_time_source.toUTCString(), path:"/"});
 	}
   else {
 		if (getCookie('source') != "none"){
-			setCookie('source',getCookie('source'), {expires: life_time_source.toUTCString()} );
+			setCookie('source',getCookie('source'), {expires: life_time_source.toUTCString(), path:"/"} );
 		}
-  			else {setCookie('source',whatsource(data_from_ip), {expires: life_time_source.toUTCString()} );}
+  			else {setCookie('source',whatsource(data_from_ip), {expires: life_time_source.toUTCString(), path:"/"} );}
 	}
 SetInterface(getCookie('source'));
 
 if (QueryString.mcmail){
-	setCookie('from_mail','yepi', {expires: life_time_mail.toUTCString()} );
+	setCookie('from_mail','yepi', {expires: life_time_mail.toUTCString(), path:"/"} );
 	mcupdate();}
 if (getCookie('from_mail') == 'yepi'){showpopup=0};
 	
