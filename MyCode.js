@@ -264,8 +264,8 @@ function mcupdate(){
   .catch( console.log);
 } 
 function mcsub(block_id,name_widget, mail_widget){
-	var mcfname = $block_id.find('input[name="'+name_widget+'"]').val(); 
-	var mcemail = $block_id.find('input[name="'+mail_widget+'"]').val(); 
+	var mcfname = $(block_id).find('input[name="'+name_widget+'"]').val(); 
+	var mcemail = $(block_id).find('input[name="'+mail_widget+'"]').val(); 
 	var company = whatcompany(data_from_ip);
   if (emailAddressValid(mcemail)){
 	fetch('https://us11.api.mailchimp.com/2.0/lists/subscribe', {
