@@ -1,0 +1,8 @@
+.simple_overlay_p { display:none; z-index:10000; position:absolute; 
+background-color:#fff; width:470px; min-height:200px; max-height:400px; 
+border:1px solid #666; padding:10px; -moz-box-shadow:0 0 90px 5px #000;
+ -webkit-box-shadow: 0 0 90px #000; }
+.overlay_block{overflow:auto; } .simple_overlay_p .close 
+{background-image:url(http://lpgenerator.ru/media/css/upgrade/widget/popup/close.png);
+position:absolute; z-index:10001; right:-15px; top:-15px; cursor:pointer; 
+height:25px; width:25px; }
