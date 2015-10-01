@@ -413,7 +413,8 @@ switch (QueryString.utm_source){
 	break;
 };
 };
-function pop_up_for_lid(form1,form_butt1,button1){ jq_181(function($){// отвечает за создание поп-ап формы и его активации
+function pop_up_for_lid(form1,form_butt1,button1){ 
+jq_181(function($){// отвечает за создание поп-ап формы и его активации
 /*-------------------------------------------*/
 $('body').append('<div class="simple_overlay_p" id="overlay1"></div>');/* слздал блок с крестом*/
 $('#overlay1').append($(form1).css('position', 'static').css('margin','auto'));  
@@ -430,4 +431,28 @@ $(button1).click(function(e){
 		$('#overlay1').overlay().load();
 		}else { gotohell(bpress)};});
 });}
-
+function form_with_load(block_id,name_of_lid,mail_of_lid ){
+jq_144(block_id).on( 'submit', '.our_form', function (){ // block-newID - id формы
+  mcsub(block_id,name_of_lid,mail_of_lid);
+     var form = jq_144(this);
+     jq_144('#lp_form_target').on( 'load', function(){
+    	showpopup=0; 
+	 if (yaCountwith == 0) {yaCounter31701781.reachGoal('NEW_LID_WHITHIN'); yaCountwith = 1;};
+	 timerName255 = setInterval(function() {}, 1000);});});}
+function form_for_pop_up(block_id,name_of_lid,mail_of_lid){
+jq_144(block_id).on( 'submit', '.our_form', function (){ // оператор формы без вложения
+mcsub(block_id,name_of_lid,mail_of_lid);
+     jq_144('#lp_form_target').on( 'load', function(){
+	$('#form_submit_message').css('display','none');
+	jq_181('#overlay1').overlay().close();
+    	gotohell(bpress);
+    	if (yaCount == 0) {yaCounter31701781.reachGoal('NEW_LID');  yaCount = 1;};
+    	showpopup=0;    
+	timerName255 = setInterval(function() {
+        if ( jq_144('#form_submit_message').css('display') == 'none' ) {
+ 	clearInterval(timerName255);
+               }
+           }, 1000);
+       });
+   });	
+}
