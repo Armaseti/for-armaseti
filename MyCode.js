@@ -1,4 +1,9 @@
 //--------------------------------------------
+var telef;
+  var mail;
+  var ref1;
+  var ref2;
+  var ref3;
 var showpopup=1;
 var yaCount = 0;
 var yaCountwith = 0;
