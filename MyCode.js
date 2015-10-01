@@ -352,8 +352,8 @@ if (QueryString.source){
 SetInterface(getCookie('source'));
 
 if (QueryString.mcmail){
-	mcupdate();
 	setCookie('from_mail','yepi', {expires: life_time_mail.toUTCString()} )};
+	mcupdate();
 if (getCookie('from_mail') == 'yepi'){showpopup=0};
 	
 
