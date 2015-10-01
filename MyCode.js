@@ -7,9 +7,9 @@ if(continue_spy){ setTimeout('element_spy("' + id + '")',1); }
 //-----------------------------------
 var telef;
   var mail;
-  var ref1;
-  var ref2;
-  var ref3;
+  var katalog_LD;
+  var katalog_strizh;
+  var price;
 var showpopup=1;
 var yaCount = 0;
 var yaCountwith = 0;
@@ -36,93 +36,93 @@ switch (param) { // распределяет ссылки и значения д
   case 'krasnoyarsk':
   telef="+7(913)396-63-09";
   mail="arma-seti@yandex.com";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTkMxOVVyR2pGSWM";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRcjR5aDVmSEFJVUE";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTjJYbFlzMzAtLUE";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTkMxOVVyR2pGSWM";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRcjR5aDVmSEFJVUE";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTjJYbFlzMzAtLUE";
   break;
   case 'tomsk':
   telef="+7(913)376-11-63";
   mail="arma-seti@narod.ru";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRa0w3QmN0ZEtwaUk";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM2V0eWVaUU1Yb3c";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRN1N6M2J6TXVhWlk";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRa0w3QmN0ZEtwaUk";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM2V0eWVaUU1Yb3c";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRN1N6M2J6TXVhWlk";
   break;
   case 'omsk':
   telef="+7(913)376-22-19";
   mail="arma-seti@ya.ru";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRelpXQ29WTW16Rnc";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRZEJqS1NfVnBWU0U";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNUxWZXhRMGR3Ulk";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRelpXQ29WTW16Rnc";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRZEJqS1NfVnBWU0U";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNUxWZXhRMGR3Ulk";
   break;
   case 'kemerovo':
   telef="+7(913)396-66-92";
   mail="arma-seti@yandex.by";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRelA1emFwaFRmNEk";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRUxGQk1ndzRpbmM";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRclFzWWxrSFRjbDQ";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRelA1emFwaFRmNEk";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRUxGQk1ndzRpbmM";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRclFzWWxrSFRjbDQ";
   break;
   case 'barnaul':
   telef="+7(913)396-63-07";
   mail="arma-seti@yandex.kz";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUS1NM0Y3NmJ0cHM";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYzlidURDR0tReE0";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTmpPWXNBSDNuQVE";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUS1NM0Y3NmJ0cHM";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYzlidURDR0tReE0";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTmpPWXNBSDNuQVE";
   break;
   case 'other':
   telef="+7(913)376-10-38";
   mail="arma-seti@yandex.ru";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRVWtIdVp0ZW1OX1U";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWnllUjdsV0gyR3M";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM3Utb204T0JMeEU";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRVWtIdVp0ZW1OX1U";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWnllUjdsV0gyR3M";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM3Utb204T0JMeEU";
   break;
   case 'ya':
   telef="+7(383)207-86-29";
   mail="armaseti-opt@yandex.ru";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPROWEzRW11OUQwTUU";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPReVFLb1dOREM3eFE";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRU3M4LUVLYW5UN0E";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPROWEzRW11OUQwTUU";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPReVFLb1dOREM3eFE";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRU3M4LUVLYW5UN0E";
   break;
   case 'rsya':
   telef="+7(383)207-86-98";
   mail="armaseti-opt@narod.ru";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdlVTMFdQbGVPZ2c";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRl9Gek9QcWNFU28";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRSnQ4UVprRGt0ZVE";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdlVTMFdQbGVPZ2c";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRl9Gek9QcWNFU28";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRSnQ4UVprRGt0ZVE";
   break;
   case 'ga':
   telef="+7(383)207-98-93";
   mail="armaseti-opt@ya.ru";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdUZCNHNzcXpLNlU";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRbThDTkhPRjRhMWc";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNGZVSU81LUw4TTA";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdUZCNHNzcXpLNlU";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRbThDTkhPRjRhMWc";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNGZVSU81LUw4TTA";
   break;
   case 'kms':
   telef="+7(383)209-53-40";
   mail="armaseti-opt@yandex.by";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc0hoZ25kb0FyZUE";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRZ1pVOWJObXB4bms";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdnJ3Tmx0WC1kOE0";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc0hoZ25kb0FyZUE";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRZ1pVOWJObXB4bms";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdnJ3Tmx0WC1kOE0";
   break;
   case 'vk':
   telef="+7(383)207-81-82";
   mail="armaseti154@narod.ru";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPReWV4eGd0b1I3LXM";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRbjBBLVhjcElRVUE";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRbloyQ1hlRWtidTA";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPReWV4eGd0b1I3LXM";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRbjBBLVhjcElRVUE";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRbloyQ1hlRWtidTA";
   break;
   case 'mt':
   telef="+7(383)209-56-55";
   mail="armaseti154@ya.ru";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRejE2UmpQUkRpX2s";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRT28tRW1BbFBnRGM";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRS1I4bzZSak80ajg";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRejE2UmpQUkRpX2s";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRT28tRW1BbFBnRGM";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRS1I4bzZSak80ajg";
   break;
  default:
   telef="+7(383)209-56-40";
   mail="armaseti-opt@yandex.ua";
-  ref1="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1d2SWV6MElCZkk";
-  ref2="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUW1UTmhWR0lkMm8";
-  ref3="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1lia0ZiVEJyczA";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1d2SWV6MElCZkk";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUW1UTmhWR0lkMm8";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1lia0ZiVEJyczA";
 };
 jq_144(function(){ // втавляет данные в форму страницы
   jq_144('#tel_text').append(telef);
