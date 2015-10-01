@@ -1,3 +1,8 @@
+function element_spy(id){ // закрывает поп-ап форму
+var continue_spy = true;
+if(jq_181(id + ':visible').length){ jq_181("#overlay1" ).dialog("close"); continue_spy = false; }
+if(continue_spy){ setTimeout('element_spy("' + id + '")',1); }
+}
 //-----------------------------------
 var telef;
   var mail;
