@@ -5,7 +5,6 @@ if(jq_181(id + ':visible').length){ jq_181("#overlay1" ).dialog("close"); contin
 if(continue_spy){ setTimeout('element_spy("' + id + '")',1); }
 }
 function pop_up_for_lid(form1,form_butt1,button1){ 
-	console.log("попытка создать функцию поп ап");
 jq_181(function($){// отвечает за создание поп-ап формы и его активации
 /*-------------------------------------------*/
 $('body').append('<div class="simple_overlay_p" id="overlay1"></div>');/* слздал блок с крестом*/
