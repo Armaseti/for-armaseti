@@ -338,20 +338,24 @@ function setCookie(name, value, options) {
 
   document.cookie = updatedCookie;
 }
-var lifetime = new Date(new Date().getTime() + 30*24*60*60 * 1000);
-lifetime.toUTCString();
+var life_time_source = new Date(new Date().getTime() + 30*24*60*60 * 1000);
+var life_time_mail = new Date(new Date().getTime() + 3*24*60*60 * 1000);
 if (QueryString.source){
-  setCookie('source',QueryString.source, {expires: lifetime.toUTCString()})
+  setCookie('source',QueryString.source, {expires: life_time_source.toUTCString()})
 	}
   else {
 		if (getCookie('source') != "none"){
-			setCookie('source',getCookie('source'), {expires: lifetime.toUTCString()} );
+			setCookie('source',getCookie('source'), {expires: life_time_source.toUTCString()} );
 		}
-  			else {setCookie('source',whatsource(data_from_ip), {expires: lifetime.toUTCString()} );}
+  			else {setCookie('source',whatsource(data_from_ip), {expires: life_time_source.toUTCString()} );}
 	}
 SetInterface(getCookie('source'));
 
-if (QueryString.mcmail){mcupdate()};
+if (QueryString.mcmail){
+	mcupdate();
+	setCookie('from_mail','yepi', {expires: life_time_mail.toUTCString()} )};
+if (getCookie('from_mail') == 'yepi'){showpopup=0};
+	
 
 if (QueryString.utm_source){
 switch (QueryString.utm_source){
