@@ -1,9 +1,3 @@
-function element_spy(id){ // закрывает поп-ап форму
-var continue_spy = true;
-if(jq_181(id + ':visible').length){ jq_181("#overlay1" ).dialog("close"); continue_spy = false; }
-if(continue_spy){ setTimeout('element_spy("' + id + '")',1); }
-}
-
 function form_with_load(block_id,name_of_lid,mail_of_lid ){
 jq_144(block_id).on( 'submit', '.our_form', function (){ // block-newID - id формы
   mcsub(block_id,name_of_lid,mail_of_lid);
