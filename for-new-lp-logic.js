@@ -23,7 +23,7 @@ var QueryString = function () {var query_string = {};var query = window.location
       query_string[pair[0]] = decodeURIComponent(pair[1]);
     } else if (typeof query_string[pair[0]] === "string") {
       var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
-      query_string[pair[0]] = arr;
+      query_string[pair[0]] = arr; 
     } else {query_string[pair[0]].push(decodeURIComponent(pair[1]));}}return query_string;}();
     
 function SetInterface(param){
