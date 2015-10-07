@@ -6,7 +6,7 @@ var onSuccess = function(location){
 	data_from_ip.country_code=location.country.iso_code;
 	data_from_ip.region_name=location.subdivisions[0].names.ru;
 	data_from_ip.city=location.city.names.ru;
-	data_from_ip.time_zone=location.time_zone;
+	data_from_ip.time_zone=location.location.time_zone;
 	company = whatcompany(data_from_ip);
 };
 geoip2.city(onSuccess, onError);
