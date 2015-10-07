@@ -12,7 +12,7 @@ var onSuccess = function(location){
 var onError = function(error){
 scriptRequest('http://freegeoip.net/json/', ip_data_succ, ip_data_fail);
 };
-if (getCookie(ip_block)!="yes"){
+if (getCookie("ip_block")!="yes"){
 geoip2.city(onSuccess, onError);}
 function element_spy(id){ // закрывает поп-ап форму
 var continue_spy = true;
