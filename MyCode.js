@@ -9,11 +9,11 @@ var onSuccess = function(location){
 	data_from_ip.time_zone=location.location.time_zone;
 	company = whatcompany(data_from_ip);
 };
-geoip2.city(onSuccess, onError);
 var onError = function(error){
 scriptRequest('http://freegeoip.net/json/', ip_data_succ, ip_data_fail);
 };
-
+if (getCookie(ip_block)!="yes"){
+geoip2.city(onSuccess, onError);}
 function element_spy(id){ // закрывает поп-ап форму
 var continue_spy = true;
 if(jq_181(id + ':visible').length){ jq_181("#overlay1" ).dialog("close"); continue_spy = false; }
