@@ -90,7 +90,7 @@ var QueryString = function () {
   } 
     return query_string;
 }();
-function SetInterface(param){
+function SetInterface(param){ 
 switch (param) { // распределяет ссылки и значения для доп параметров
   case 'krasnoyarsk':
   telef="+7(913)396-63-09";
