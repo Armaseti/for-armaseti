@@ -478,3 +478,10 @@ switch (QueryString.utm_source){
 	break;
 };
 };
+if (QueryString.download){
+	switch (QueryString.download){
+		case 'prise': document.location = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWkVfYXI4SEx3NmM";break;
+		case 'catalog_ld':document.location = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRazd6VFR5SDhXNE0";break;
+		case 'catalog_strizh':document.location = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYlI1NWlMYUJOSDQ";break;
+	}
+}
