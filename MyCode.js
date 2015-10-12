@@ -486,4 +486,5 @@ if (QueryString.download){
 		case 'cat_str': url1 = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYlI1NWlMYUJOSDQ";break;}
 	var newWin = window.open("about:blank", "hello", "width=200,height=200");
 	newWin.document.location=url1;
+	newWin.onload = function() {newWin.close();}
 }
