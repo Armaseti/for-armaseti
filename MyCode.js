@@ -331,7 +331,8 @@ function mcupdate(){
 		"mc_language": "ru",
     },
 })
-    }).then(function(response) {return response}).then(function(user) {return user})
+    }).then(function(response) {return response}).then(function(user) {downloader();
+    	return user})
   .catch( console.log);
 } 
 function mcsub(block_id,name_widget, mail_widget){
@@ -478,10 +479,11 @@ switch (QueryString.utm_source){
 	break;
 };
 };
+function downloader(){
 if (QueryString.download){
 	switch (QueryString.download){
 		case 'prise': document.location = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWkVfYXI4SEx3NmM";break;
 		case 'catalog_ld':document.location = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRazd6VFR5SDhXNE0";break;
 		case 'catalog_strizh':document.location = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYlI1NWlMYUJOSDQ";break;
-	}
+	}}
 }
