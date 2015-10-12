@@ -484,7 +484,6 @@ if (QueryString.download){
 		case 'prise': url1 = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWkVfYXI4SEx3NmM";break;
 		case 'cat_ld': url1 = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRazd6VFR5SDhXNE0";break;
 		case 'cat_str': url1 = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYlI1NWlMYUJOSDQ";break;}
-	var newWin = window.open("about:blank", "hello", "width=200,height=200");
-	newWin.document.location=url1;
-	newWin.onload = function() {newWin.close();}
+function createIframe(name, src, debug) {src = src || 'javascript:false'; var tmpElem = document.createElement('div');tmpElem.innerHTML = '<iframe name="' + name + '" id="' + name + '" src="' + src + '">';var iframe = tmpElem.firstChild;if (!debug) {iframe.style.display = 'none';}document.body.appendChild(iframe);return iframe;}
+createIframe('download', url1);
 }
