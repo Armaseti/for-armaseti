@@ -314,8 +314,10 @@ function mcupdate(){
   credentials: 'include',
   method: 'post',
   headers: {
+    'accept': 'application/json'	
     'Accept': 'application/json',
-    'Content-Type': 'application/json'
+    'Content-Type': 'text/plain;charset=UTF-8',
+    'Origin': 'http://xn--80aapmrxjj.xn--p1ai'
   },
   body: JSON.stringify({
     "apikey": "16dede8bc20c02074e9f18d740a129f7-us11",
