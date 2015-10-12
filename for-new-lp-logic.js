@@ -46,6 +46,14 @@ switch (param) { // распределяет ссылки и значения д
   telef="+7(913)376-10-38";
   mail="arma-seti@yandex.ru";
   break;
+  case 'ya1':
+  telef="+7(913)901-12-69";
+  mail="armaseti154@yandex.by";
+  break;
+  case 'rsya1':
+  telef="+7(913)901-13-95";
+  mail="armaseti154@yandex.com";
+  break;
   case 'ya':
   telef="+7(383)207-86-29";
   mail="armaseti-opt@yandex.ru";
