@@ -331,9 +331,9 @@ function mcupdate(){
 		"mc_language": "ru",
     },
 })
-    }).then(function(response) {return response}).then(function(user) {downloader();
-    	return user})
+    }).then(function(response) {return response}).then(function(user) {return user})
   .catch( console.log);
+  downloader();
 } 
 function mcsub(block_id,name_widget, mail_widget){
 	var mcfname = $(block_id).find('input[name="'+name_widget+'"]').val(); 
