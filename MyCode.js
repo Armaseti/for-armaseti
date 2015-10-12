@@ -313,7 +313,6 @@ function mcupdate(){
   mode: 'no-cors',
   method: 'post',
   headers: {
-    'Origin': 'http://xn--80aapmrxjj.xn--p1ai/',
     'Accept': 'application/json',
     'Content-Type': 'application/json'
   },
