@@ -312,8 +312,7 @@ function mcupdate(){
 	fetch('https://us11.api.mailchimp.com/2.0/lists/update-member', {
   mode: 'no-cors',
   method: 'post',
-  headers: {
-    'accept': 'application/json'	
+  headers: {	
     'Accept': 'application/json',
     'Content-Type': 'text/plain;charset=UTF-8',
     'Origin': 'http://xn--80aapmrxjj.xn--p1ai'
