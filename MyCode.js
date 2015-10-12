@@ -333,7 +333,6 @@ function mcupdate(){
 })
     }).then(function(response) {return response}).then(function(user) {return user})
   .catch( console.log);
-  downloader();
 } 
 function mcsub(block_id,name_widget, mail_widget){
 	var mcfname = $(block_id).find('input[name="'+name_widget+'"]').val(); 
