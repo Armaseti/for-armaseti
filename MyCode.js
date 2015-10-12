@@ -311,7 +311,6 @@ function whatsource(datas){
 function mcupdate(){
 	fetch('https://us11.api.mailchimp.com/2.0/lists/update-member', {
   mode: 'no-cors',
-  credentials: 'include',
   method: 'post',
   headers: {
     'accept': 'application/json'	
