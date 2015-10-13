@@ -187,10 +187,16 @@ switch (param) { // распределяет ссылки и значения д
   case 'ya1':
   telef="+7(913)901-12-69";
   mail="armaseti154@yandex.by";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRSFlRTV9kYWs2NFU";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRV09sYnJfR1N0TUU";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTEZqNEJqUG92T00";
   break;
   case 'rsya1':
   telef="+7(913)901-13-95";
   mail="armaseti154@yandex.com";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRSnRoZmpHbTFLSDA";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRX2pVSGI1dkcyVUk";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRX1BsY2dGczZuSkE";
   break;
  default:
   telef="+7(383)209-56-40";
