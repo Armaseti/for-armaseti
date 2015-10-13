@@ -184,6 +184,14 @@ switch (param) { // распределяет ссылки и значения д
   katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYlI1NWlMYUJOSDQ";
   price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWkVfYXI4SEx3NmM";
   break;
+  case 'ya1':
+  telef="+7(913)901-12-69";
+  mail="armaseti154@yandex.by";
+  break;
+  case 'rsya1':
+  telef="+7(913)901-13-95";
+  mail="armaseti154@yandex.com";
+  break;
  default:
   telef="+7(383)209-56-40";
   mail="armaseti-opt@yandex.ua";
