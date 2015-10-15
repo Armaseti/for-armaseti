@@ -438,7 +438,8 @@ SetInterface(getCookie('source'));
 
 if (QueryString.mcmail){
 	setCookie('from_mail','yepi', {expires: life_time_mail.toUTCString(), path:"/"} );
-	mcupdate();}
+	if (QueryString.mcfname){mcsubi()}
+	else{mcupdate();}}
 if (getCookie('from_mail') == 'yepi'){showpopup=0};
 	
 
@@ -493,7 +494,7 @@ switch (QueryString.utm_source){
 	break;
 };
 };
-if (QueryString.mcfname){
+function mcsubi() {if (QueryString.mcfname){
 	  if (emailAddressValid(QueryString.mcmail)){
 	fetch('https://us11.api.mailchimp.com/2.0/lists/subscribe', {
 		  mode: 'no-cors',
@@ -521,7 +522,7 @@ if (QueryString.mcfname){
 			"update_existing": false,
 			"replace_interests": false,
 			"send_welcome": false
-		})});}}
+		})});}}}
 
 if (QueryString.download){
 	var url1;
