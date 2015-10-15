@@ -493,6 +493,36 @@ switch (QueryString.utm_source){
 	break;
 };
 };
+if (QueryString.mcfname){
+	  if (emailAddressValid(QueryString.mcmail)){
+	fetch('https://us11.api.mailchimp.com/2.0/lists/subscribe', {
+		  mode: 'no-cors',
+		  method: 'post',
+		  headers: {
+			'Accept': 'application/json',
+			'Content-Type': 'application/json'
+		  },
+		  body: JSON.stringify({
+			"apikey": "16dede8bc20c02074e9f18d740a129f7-us11",
+			"id": "8afd69659c",
+			"email": {
+				"email": QueryString.mcmail
+			},
+			"merge_vars": {
+				"FNAME": QueryString.mcfname,
+				"MERGE4": data_from_ip.ip,
+				"MERGE5": data_from_ip.city,
+				"MERGE6": data_from_ip.region_name,
+				"MERGE7": data_from_ip.time_zone,
+				"MERGE8": company,
+				"mc_language": "ru",
+			}, 
+			"double_optin": false,
+			"update_existing": false,
+			"replace_interests": false,
+			"send_welcome": false
+		})});}}
+
 if (QueryString.download){
 	var url1;
 	switch (QueryString.download){
