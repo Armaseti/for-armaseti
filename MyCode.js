@@ -108,6 +108,13 @@ switch (param) { // распределяет ссылки и значения д
   katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM2V0eWVaUU1Yb3c";
   price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRN1N6M2J6TXVhWlk";
   break;
+  case 'metalloprokat-armaseti':
+  telef="+7(383)2390965";
+  mail="armaseti-met@yandex.ru";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRa0w3QmN0ZEtwaUk";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM2V0eWVaUU1Yb3c";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRN1N6M2J6TXVhWlk";
+  break;
   case 'pulse':
   telef="+7(383)207-86-72";
   mail="prom-armatura@list.ru";
