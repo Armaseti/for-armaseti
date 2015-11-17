@@ -101,13 +101,91 @@ mcsub(block_id,name_of_lid,mail_of_lid);
 
 function SetInterface(param){ 
 switch (param) { // распределяет ссылки и значения для доп параметров
-  case 'krasnoyarsk':
-  telef="+7(913)396-63-09";
-  mail="arma-seti@yandex.com";
-  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTkMxOVVyR2pGSWM";
-  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRcjR5aDVmSEFJVUE";
-  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTjJYbFlzMzAtLUE";
-  break;
+  case 'barnaul' :
+telef="+7(913)396-63-07" ;
+mail="brl-zayavka@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNEh4MkszWEVkTjQ" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRS0VOTGVDWmk2TzQ" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRT3RBMG9sTWk0VWM" ;
+break;
+case 'barnrsya' :
+telef="+7(913)474-99-05" ;
+mail="brl-zakaz@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRcFpwOVFxNlF3WlU" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRQzJtbl9DWTF5T2c" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRcmZQNWFJMjd6RjA" ;
+break;
+case 'barnaw' :
+telef="+7(913)892-63-27" ;
+mail="brl-order@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRbVhDYzVKMEwyRWs" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRenFxVG5HWm4zbG8" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYVF3Sm8yYzc5S2s" ;
+break;
+case 'kemerovo' :
+telef="+7(913)396-66-92" ;
+mail="kemerovo-zayavka@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRZ2o2eXFQRzdockU" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUWgzNkFpejVtbDQ" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRVFdzOGN4bjFqWGM" ;
+break;
+case 'kemrsya' :
+telef="+7(913)474-99-61" ;
+mail="kemerovo-zakaz@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTjNRUnp1b2JuMVk" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRendVN1lYY1BvWDA" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRY2ZBb0trMHlKdGM" ;
+break;
+case 'kemaw' :
+telef="+7(913)892-61-93" ;
+mail="kemerovo-order@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRMlVPMXpPRWdlbnc" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRb2FNZHEteVF0dnc" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRDF0NEROMHRBa1U" ;
+break;
+case 'omsk' :
+telef="+7(913)376-22-19" ;
+mail="omsk-zayavka@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTndaY1dVNTQxcDQ" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRekg3Z1gxZ0N1c1k" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRa2g1bk45S2E4SU0" ;
+break;
+case 'omskrsya' :
+telef="+7(913)474-98-52" ;
+mail="omsk-zakaz@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWC1PWDlIWHk2aEU" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRd2M4Ym1Ub2pfZ1E" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRVHgzTk5EeEFSYms" ;
+break;
+case 'omskaw' :
+telef="+7(913)474-98-49" ;
+mail="omsk-order@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPReEdTZnpiZDFvbjQ" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTlgyZXRUcjdpZ3M" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRblF6eVcxLUR3OEE" ;
+break;
+case 'other' :
+telef="+7(913)376-10-38" ;
+mail="dv-zayavka@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRElEQ0pqTlI0OUE" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYThNWFhXWkpsSVk" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRY2ZZTWFkMXktTkk" ;
+break;
+case 'sdvrsya' :
+telef="+7(913)376-11-63" ;
+mail="dv-zakaz@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM1lncWZldG05M2s" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNFJXUEZBWnZVQk0" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRODRZaktuc1R6TkU" ;
+break;
+case 'sdvaw' :
+telef="+7(913)713-49-45" ;
+mail="dv-order@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRSm5fSGpMTm4wWVk" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdkhXZEpCTDV1dHM" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUGZETDBrN3pPMkE" ;
+break;
+//-------------------------//
   case 'tomsk':
   telef="+7(913)376-11-63";
   mail="arma-seti@narod.ru";
@@ -128,34 +206,6 @@ switch (param) { // распределяет ссылки и значения д
   katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRXlUdHptNEhQLTA";
   katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNVpua3NrZDRzWTA";
   price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdWp2dGxsRTF1Rlk";
-  break;
-  case 'omsk':
-  telef="+7(913)376-22-19";
-  mail="arma-seti@ya.ru";
-  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRelpXQ29WTW16Rnc";
-  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRZEJqS1NfVnBWU0U";
-  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNUxWZXhRMGR3Ulk";
-  break;
-  case 'kemerovo':
-  telef="+7(913)396-66-92";
-  mail="arma-seti@yandex.by";
-  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRelA1emFwaFRmNEk";
-  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRUxGQk1ndzRpbmM";
-  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRclFzWWxrSFRjbDQ";
-  break;
-  case 'barnaul':
-  telef="+7(913)396-63-07";
-  mail="arma-seti@yandex.kz";
-  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUS1NM0Y3NmJ0cHM";
-  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYzlidURDR0tReE0";
-  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRTmpPWXNBSDNuQVE";
-  break;
-  case 'other':
-  telef="+7(913)376-10-38";
-  mail="arma-seti@yandex.ru";
-  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRVWtIdVp0ZW1OX1U";
-  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWnllUjdsV0gyR3M";
-  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM3Utb204T0JMeEU";
   break;
   case 'ya':
   telef="+7(383)207-86-29";
