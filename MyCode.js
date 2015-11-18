@@ -101,6 +101,29 @@ mcsub(block_id,name_of_lid,mail_of_lid);
 
 function SetInterface(param){ 
 switch (param) { // распределяет ссылки и значения для доп параметров
+case 'kskrsya' :
+telef="+7(913)713-48-77" ;
+mail="krs-zakaz@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWWdzU01yYnEzSWM" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRZVFiUTZ0NFBSMU0" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRZnh5bXhoV25JZFU" ;
+break;
+case 'krasnoyarsk' :
+telef="+7(913)396-63-09" ;
+mail="krs-zayavka@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYnp6LTVpWldkeW8" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRa1ZPWEg3Y21tSWc" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRQm5YWXp2MkY2NlU" ;
+break;
+case 'kskaw' :
+telef="+7(913)892-67-30" ;
+mail="krs-order@armaseti.ru" ;
+katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRbG1ISHB3UC1uUlk" ;
+katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRZGF0Y01EVmJ5dGc" ;
+price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRkFQNThWYVUyTTg" ;
+break;  
+
+  //----
   case 'barnaul' :
 telef="+7(913)396-63-07" ;
 mail="brl-zayavka@armaseti.ru" ;
