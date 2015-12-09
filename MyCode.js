@@ -347,8 +347,8 @@ telef1[15] = '.';
 telef1= telef1.join("");
 
 
-	$('#mail_text').html('<a onclick="showmail();">'+telef1+'</a>');
-	$('#tel_text').html('<a onclick="showtel();">'+mail1+'</a>');
+	$('#mail_text').html('<a onclick="showmail();">'+mail1+'</a>');
+	$('#tel_text').html('<a onclick="showtel();">'+telef1+'</a>');
 
   //jq_144('#tel_text').append(telef);
   //jq_144('#mail_text').append(mail);
