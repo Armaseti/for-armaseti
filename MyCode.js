@@ -301,12 +301,19 @@ break;
   price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1lia0ZiVEJyczA";
 };
 jq_144(function(){ // втавляет данные в форму страницы
-  jq_144('#tel_text').append(telef);
-  	jq_144('#mail_text').append(mail);
-});	
-	
-}
+	$('#mail_text').html('<a href="#" onclick="showmail();">Показать</>');
+	$('#tel_text').html('<a href="#" onclick="showtel();">Показать</>');
 
+  //jq_144('#tel_text').append(telef);
+  //jq_144('#mail_text').append(mail);
+});	
+}
+function showtel(){
+$('#mail_tel').html(text);
+}
+function showmail(){
+$('#mail_mail').html(mail);
+}
 //--------------------------------------------
 
 //--------------------------------------------
