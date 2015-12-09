@@ -244,7 +244,7 @@ break;
   price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRN1N6M2J6TXVhWlk";
   break;
   case 'metalloprokat-armaseti':
-  telef="+7(383)2390965";
+  telef="+7(383)239-09-65";
   mail="armaseti-met@yandex.ru";
   katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRa0w3QmN0ZEtwaUk";
   katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRM2V0eWVaUU1Yb3c";
@@ -328,8 +328,27 @@ break;
   price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1lia0ZiVEJyczA";
 };
 jq_144(function(){ // втавляет данные в форму страницы
-	$('#mail_text').html('<a onclick="showmail();">Показать</a>');
-	$('#tel_text').html('<a onclick="showtel();">Показать</a>');
+var telef1 = telef.split("");
+mail1= mail.split("");
+var temp="";
+for (var i=0;;i++){
+  temp = temp + mail1[i];
+  if (mail1[i] == "@") {
+  	che=1;
+    temp = temp + "...";
+    mail1 = temp;
+    break;
+  }
+}
+
+telef1[13] = '.';
+telef1[14] = '.';
+telef1[15] = '.';
+telef1= telef1.join("");
+
+
+	$('#mail_text').html('<a onclick="showmail();">'+telef1+'</a>');
+	$('#tel_text').html('<a onclick="showtel();">'+mail1+'</a>');
 
   //jq_144('#tel_text').append(telef);
   //jq_144('#mail_text').append(mail);
