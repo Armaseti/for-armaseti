@@ -303,17 +303,17 @@ break;
 jq_144(function(){ // втавляет данные в форму страницы
 	$('#mail_text').html('<a onclick="showmail();">Показать</>');
 	$('#tel_text').html('<a onclick="showtel();">Показать</>');
-function showtel(){
-$('#mail_tel').html(telef);
-}
-function showmail(){
-$('#mail_mail').html(mail);
-}
+
   //jq_144('#tel_text').append(telef);
   //jq_144('#mail_text').append(mail);
 });	
 }
-
+function showtel(){
+$('#tel_text').html(telef);
+}
+function showmail(){
+$('#mail_text').html(mail);
+}
 //--------------------------------------------
 
 //--------------------------------------------
