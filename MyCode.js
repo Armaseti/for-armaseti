@@ -661,4 +661,4 @@ createIframe('download', url1);
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
     var divv = document.createElement('noscript'); divv.innerHTML = '<div><img src="https://mc.yandex.ru/watch/33144723" style="position:absolute; left:-9999px;" alt="" /></div>';
-    document.documentElement.appendChild(divv);
+    document.body.appendChild(divv);
