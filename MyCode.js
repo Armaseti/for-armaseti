@@ -96,7 +96,7 @@ mcsub(block_id,name_of_lid,mail_of_lid);
            }, 1000);
        });
    });	
-}
+} 
 //-----------------------------------
 
 function SetInterface(param){ 
