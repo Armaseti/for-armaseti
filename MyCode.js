@@ -1,3 +1,30 @@
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter33144723 = new Ya.Metrika({
+                    id:33144723,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    var divv = document.createElement('noscript'); divv.innerHTML = '<div><img src="https://mc.yandex.ru/watch/33144723" style="position:absolute; left:-9999px;" alt="" /></div>';
+    document.body.appendChild(divv);
+//------------------------
 (function(){ var widget_id = 'jefUEST2ps';
 var s = document.createElement('script'); 
 s.type = 'text/javascript'; 
@@ -301,8 +328,8 @@ break;
   price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1lia0ZiVEJyczA";
 };
 jq_144(function(){ // втавляет данные в форму страницы
-	$('#mail_text').html('<a onclick="showmail();">Показать</>');
-	$('#tel_text').html('<a onclick="showtel();">Показать</>');
+	$('#mail_text').html('<a onclick="showmail();">Показать</a>');
+	$('#tel_text').html('<a onclick="showtel();">Показать</a>');
 
   //jq_144('#tel_text').append(telef);
   //jq_144('#mail_text').append(mail);
@@ -636,29 +663,3 @@ if (QueryString.download){
 function createIframe(name, src, debug) {src = src || 'javascript:false'; var tmpElem = document.createElement('div');tmpElem.innerHTML = '<iframe name="' + name + '" id="' + name + '" src="' + src + '">';var iframe = tmpElem.firstChild;if (!debug) {iframe.style.display = 'none';}document.body.appendChild(iframe);return iframe;}
 createIframe('download', url1);
 }
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter33144723 = new Ya.Metrika({
-                    id:33144723,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-    var divv = document.createElement('noscript'); divv.innerHTML = '<div><img src="https://mc.yandex.ru/watch/33144723" style="position:absolute; left:-9999px;" alt="" /></div>';
-    document.body.appendChild(divv);
