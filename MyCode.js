@@ -105,7 +105,7 @@ jq_144(block_id).on( 'submit', '.our_form', function (){ // block-newID - id ф�
      var form = jq_144(this);
      jq_144('#lp_form_target').on( 'load', function(){
     	showpopup=0; 
-	 if (yaCountwith == 0) {yaCounter31701781.reachGoal('NEW_LID_WHITHIN'); yaCountwith = 1;};
+	 if (yaCountwith == 0) {yaCounter33144723.reachGoal('New_Lid_With_Order'); yaCountwith = 1;};
 	 timerName255 = setInterval(function() {}, 1000);});});}
 function form_for_pop_up(block_id,name_of_lid,mail_of_lid){
 jq_144(block_id).on( 'submit', '.our_form', function (){ // оператор формы без вложения
@@ -114,7 +114,7 @@ mcsub(block_id,name_of_lid,mail_of_lid);
 	$('#form_submit_message').css('display','none');
 	jq_181('#overlay1').overlay().close();
     	gotohell(bpress);
-    	if (yaCount == 0) {yaCounter31701781.reachGoal('NEW_LID');  yaCount = 1;};
+    	if (yaCount == 0) {yaCounter33144723.reachGoal('New_Lid');  yaCount = 1;};
     	showpopup=0;    
 	timerName255 = setInterval(function() {
         if ( jq_144('#form_submit_message').css('display') == 'none' ) {
@@ -356,9 +356,11 @@ telef1= telef1.join("");
 }
 function showtel(){
 $('#tel_text').html(telef);
+yaCounter33144723.reachGoal('Show_Telefon');
 }
 function showmail(){
 $('#mail_text').html(mail);
+yaCounter33144723.reachGoal('Show_Mail');
 }
 //--------------------------------------------
 
@@ -591,7 +593,7 @@ function checkpam() {if (QueryString.mcmail){
 if (getCookie('from_mail') == 'yepi'){showpopup=0};
 	
 
-if (QueryString.utm_source){
+/*if (QueryString.utm_source){
 switch (QueryString.utm_source){
 	case "direct":
 	yaCounter31701781.reachGoal('direct');
@@ -641,7 +643,7 @@ switch (QueryString.utm_source){
 	default:
 	break;
 };
-};
+};*/
 function mcsubi() {if (QueryString.mcfname){
 	  if (emailAddressValid(QueryString.mcmail)){
 	fetch('https://us11.api.mailchimp.com/2.0/lists/subscribe', {
