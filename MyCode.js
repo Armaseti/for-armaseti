@@ -301,7 +301,7 @@ break;
   break;
   case 'mail':
   telef="+7(383)292-36-84";
-  mail="mail-optom@yandex.ru";
+  mail="armaseti-2010@yandex.ru";
   katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRazd6VFR5SDhXNE0";
   katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYlI1NWlMYUJOSDQ";
   price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWkVfYXI4SEx3NmM";
