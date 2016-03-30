@@ -293,11 +293,11 @@ break;
   price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRbloyQ1hlRWtidTA";
   break;
   case 'mt':
-  telef="+7(383)209-56-55";
+  telef="+7(383)209-53-40";
   mail="armaseti154@ya.ru";
-  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRejE2UmpQUkRpX2s";
-  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRT28tRW1BbFBnRGM";
-  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRS1I4bzZSak80ajg";
+  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRckVsZkV5VkJ6UFE";
+  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRckVsZkV5VkJ6UFE";
+  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRckVsZkV5VkJ6UFE";
   break;
   case 'mail':
   telef="+7(383)292-36-84";
