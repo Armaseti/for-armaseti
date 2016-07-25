@@ -301,10 +301,10 @@ break;
   break;
   case 'mail':
   telef="+7(383)292-36-84";
-  mail="armaseti-2010@yandex.ru";
-  katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRazd6VFR5SDhXNE0";
-  katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRYlI1NWlMYUJOSDQ";
-  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRWkVfYXI4SEx3NmM";
+  mail="sale@prodazha-optom.ru";
+  katalog_LD="http://armasetiopt.ru/files/mail/Каталог LD.pdf";
+  katalog_strizh="http://armasetiopt.ru/files/mail/Стриж LD.pdf";
+  price="http://armasetiopt.ru/files/mail/armaseti_price.xlsx";
   break;
   case 'ya1':
   telef="+7(913)901-12-69";
