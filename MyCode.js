@@ -304,7 +304,7 @@ break;
   mail="sale@prodazha-optom.ru";
   katalog_LD="http://armasetiopt.ru/files/mail/Каталог LD.pdf";
   katalog_strizh="http://armasetiopt.ru/files/mail/Стриж LD.pdf";
-  price="http://armasetiopt.ru/files/mail/armaseti_price.xlsx";
+  price="http://armasetiopt.ru/files/prices/mail/_mail-армасети_прайс-лист.xlsx";
   break;
   case 'ya1':
   telef="+7(913)901-12-69";
@@ -325,7 +325,7 @@ break;
   mail="armaseti-opt@yandex.ua";
   katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1d2SWV6MElCZkk";
   katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUW1UTmhWR0lkMm8";
-  price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1lia0ZiVEJyczA";
+  price="http://armasetiopt.ru/files/prices/rf/_армасети-импорт_прайс-лист.xlsx";
 };
 jq_144(function(){ // втавляет данные в форму страницы
 var telef1 = telef.split("");
