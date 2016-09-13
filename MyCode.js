@@ -325,7 +325,7 @@ break;
   mail="armaseti-opt@yandex.ua";
   katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1d2SWV6MElCZkk";
   katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUW1UTmhWR0lkMm8";
-  price="http://armasetiopt.ru/files/prices/rf/_армасети-импорт_прайс-лист.xlsx";
+  price="http://armasetiopt.ru/files/prices/rf/_армасети-импорт_прайс-лист.xlsx";
 };
 jq_144(function(){ // втавляет данные в форму страницы
 var telef1 = telef.split("");
