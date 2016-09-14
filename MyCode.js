@@ -304,7 +304,7 @@ break;
   mail="sale@prodazha-optom.ru";
   katalog_LD="http://armasetiopt.ru/files/mail/Каталог LD.pdf";
   katalog_strizh="http://armasetiopt.ru/files/mail/Стриж LD.pdf";
-  price="http://armasetiopt.ru/files/prices/mail/_mail-армасети_прайс-лист.xlsx";
+  price="http://armasetiopt.ru/files/mail/_%d0%b0%d1%80%d0%bc%d0%b0%d1%81%d0%b5%d1%82%d0%b8_%d0%bf%d1%80%d0%b0%d0%b8%cc%86%d1%81.xlsx";
   break;
   case 'ya1':
   telef="+7(913)901-12-69";
