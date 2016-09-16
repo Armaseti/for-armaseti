@@ -325,7 +325,7 @@ break;
   mail="armaseti-opt@yandex.ua";
   katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1d2SWV6MElCZkk";
   katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUW1UTmhWR0lkMm8";
-  price="http://armasetiopt.ru/files/prices/mail/_mail-%D0%B0%D1%80%D0%BC%D0%B0%D1%81%D0%B5%D1%82%D0%B8_%D0%BF%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82.xlsx";
+  price="http://armasetiopt.ru/files/prices/rf/_%d0%b0%d1%80%d0%bc%d0%b0%d1%81%d0%b5%d1%82%d0%b8-%d0%b8%d0%bc%d0%bf%d0%be%d1%80%d1%82_%d0%bf%d1%80%d0%b0%d0%b8%cc%86%d1%81-%d0%bb%d0%b8%d1%81%d1%82.xlsx";
 };
 jq_144(function(){ // втавляет данные в форму страницы
 var telef1 = telef.split("");
