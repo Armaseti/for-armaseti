@@ -117,6 +117,7 @@ function form_with_load(block_id,name_of_lid,mail_of_lid ) {
     });
 }
 function form_for_pop_up(block_id,name_of_lid,mail_of_lid, overlay) {
+      if (overlay === null || overlay === undefined) overlay = '#overlay1';
     jq_144(block_id).on('submit', '.our_form', function () { 
         mcsub(block_id, name_of_lid, mail_of_lid);
         jq_144('#lp_form_target').on('load', function () {
