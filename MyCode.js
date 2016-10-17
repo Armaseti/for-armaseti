@@ -635,3 +635,59 @@ if (QueryString.download){
     function createIframe(name, src, debug) {src = src || 'javascript:false'; var tmpElem = document.createElement('div');tmpElem.innerHTML = '<iframe name="' + name + '" id="' + name + '" src="' + src + '">';var iframe = tmpElem.firstChild;if (!debug) {iframe.style.display = 'none';}document.body.appendChild(iframe);return iframe;}
     createIframe('download', url1);
 }
+//----
+class popUpOverlaySetter {
+    constructor(overlayName) {
+        this.overlay = '';
+        this.sum = 0;
+        this.trigger = 0;
+        this.scrollTrigger = 0;
+        this.overlay = overlayName;
+    }
+
+    check(delta, scrollTop) {
+        if (scrollTop > 300) {
+            this.scrollTrigger = 1;
+        }
+        if (delta < 0) {
+            this.sum+=delta;
+        }
+        if (delta > 0) {
+            this.sum = 0;
+        }
+        if (
+            (this.sum <= -300 && this.trigger === 0 && scrollTop >= 300) ||
+            (scrollTop <= 50 && this.scrollTrigger === 1 && this.trigger === 0 )){
+            this.trigger = 1;
+            $(this.overlay).overlay().load();
+        }
+    }
+
+}
+
+
+if (window.addEventListener ){
+    if ('onwheel' in document) {
+        // IE9+, FF17+, Ch31+
+        window.addEventListener("wheel", onWheel);
+    } else if ('onmousewheel' in document) {
+        // устаревший вариант события
+        window.addEventListener("mousewheel", onWheel);
+    } else {
+        // Firefox < 17
+        window.addEventListener("MozMousePixelScroll", onWheel);
+    }
+} else { // IE8-
+    window.attachEvent("onmousewheel", onWheel);
+}
+
+function onWheel(e) {
+    e = e || window.event;
+    if (popUpOverlay !== null || popUpOverlay !== undefined) {
+        // wheelDelta не дает возможность узнать количество пикселей
+        var delta = e.deltaY || e.detail || e.wheelDelta;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        popUpOverlay.check(delta, scrollTop);
+    }
+}
+//----
