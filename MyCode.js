@@ -637,7 +637,8 @@ if (QueryString.download){
 }
 //----
 class popUpOverlaySetter {
-    constructor(overlayName) {
+    constructor(overlayName, _$) {
+        this.$ = _$;
         this.overlay = '';
         this.sum = 0;
         this.trigger = 0;
@@ -659,7 +660,7 @@ class popUpOverlaySetter {
             (this.sum <= -300 && this.trigger === 0 && scrollTop >= 300) ||
             (scrollTop <= 50 && this.scrollTrigger === 1 && this.trigger === 0 )){
             this.trigger = 1;
-            $(this.overlay).overlay().load();
+            this._$.(this.overlay).overlay().load();
         }
     }
 
