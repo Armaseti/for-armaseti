@@ -376,11 +376,11 @@ function SetInterface(param){
 }
 function showtel(){
     $('#tel_text').html(telef);
-    yaCounter33144723.reachGoal('Show_Telefon');
+    if (maxgenYandexClickTrigger && maxgenYandexClickTrigger === 1) yaCounter39800615.reachGoal('show_phone'); 
 }
 function showmail(){
-    $('#mail_text').html(mail);
-    yaCounter33144723.reachGoal('Show_Mail');
+    $('#mail_text').html(mail); 
+    if (maxgenYandexClickTrigger && maxgenYandexClickTrigger === 1) yaCounter39800615.reachGoal('show_mail'); 
 }
 var CallbackRegistry = {};
 function scriptRequest(url, onSuccess, onError) {
