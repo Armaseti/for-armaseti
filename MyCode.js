@@ -660,10 +660,11 @@ class popUpOverlaySetter {
             (this.sum <= -300 && this.trigger === 0 && scrollTop >= 300) ||
             (scrollTop <= 50 && this.scrollTrigger === 1 && this.trigger === 0 )){
             this.trigger = 1;
-            this.$(this.overlay).overlay().load();
+            jq_181(function($){
+            $(this.overlay).overlay().load();
+            });
         }
     }
-
 }
 
 
