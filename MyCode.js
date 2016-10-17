@@ -107,8 +107,8 @@ function form_with_load(block_id,name_of_lid,mail_of_lid ) {
         var form = jq_144(this);
         jq_144('#lp_form_target').on('load', function () {
             showpopup = 0;
-            if (yaCountwith == 0) {
-                yaCounter33144723.reachGoal('New_Lid_With_Order');
+            if (yaCountwith == 0 && maxgenYandexTrigger && maxgenYandexTrigger === 1) {
+                yaCounter39800615.reachGoal('otpravte_zayavku'); 
                 yaCountwith = 1;
             }
             timerName255 = setInterval(function () {
