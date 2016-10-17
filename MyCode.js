@@ -124,8 +124,8 @@ function form_for_pop_up(block_id,name_of_lid,mail_of_lid, overlay) {
             $('#form_submit_message').css('display', 'none');
             jq_181(overlay).overlay().close();
             gotohell(bpress);
-            if (yaCount == 0) {
-                yaCounter33144723.reachGoal('New_Lid');
+            if (yaCount == 0 && maxgenYandexTrigger && maxgenYandexTrigger === 1) {
+                yaCounter39800615.reachGoal('dwld_fullprice'); 
                 yaCount = 1;
             }
             showpopup = 0;
