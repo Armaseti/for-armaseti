@@ -51,7 +51,6 @@ class lpGeneratorService{
     }
     clicksObserver(obj) {
         obj.options.forms.toLoadPopUpButtons.forEach(function (buttonID) {
-            obj.buttonID = buttonID;
             if (obj.popUpTrigger){
                 var fileType = 'price';
                 if (obj.options.forms.downloadSpecial && obj.options.forms.downloadSpecial[obj.buttonID])  fileType = obj.options.forms.downloadSpecial[obj.buttonID];
@@ -59,6 +58,7 @@ class lpGeneratorService{
             } else {
                 jq_181(function ($) {
                     $(buttonID).click(function (e) {
+                        obj.buttonID = buttonID;
                         e.preventDefault();
                         $('#byButtonsOverlay').overlay().load();
                     });
@@ -82,6 +82,7 @@ class lpGeneratorService{
             });
         });
         jq_144(obj.options.forms.popUpFormSubmit).on('submit', '.our_form', function () {
+            
             jq_144('#lp_form_target').on('load', function () {
                 $('#form_submit_message').css('display', 'none');
                 var fileType = 'price';
