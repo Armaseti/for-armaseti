@@ -17,7 +17,7 @@ class lpGeneratorService{
             },
             yandex: {
                 yandexCounter: options.forms.yandexCounter,
-                yandexTrigger: options.forms.yandexTrigger
+                yandexTrigger: options.forms.yandexTrigger || true
             },
             forms: {
                 toLoadPopUpButtons: options.forms.toLoadPopUpButtons,
@@ -59,11 +59,11 @@ class lpGeneratorService{
             });
         });
         jq_144(obj.options.forms.formFromOverlayByMouseScroll).on('submit', '.our_form', function () {
-            obj.options.yandex.yandexCounter.reachGoal('dwld_popprice');
+            if (obj.options.yandex.yandexTrigger) obj.options.yandex.yandexCounter.reachGoal('dwld_popprice');
         });
         obj.options.forms.formWithLoadFile.forEach(function (form) {
             jq_144(form).on('submit', '.our_form', function () {
-                obj.options.yandex.yandexCounter.reachGoal('otpravte_zayavku');
+                if (obj.options.yandex.yandexTrigger) obj.options.yandex.yandexCounter.reachGoal('otpravte_zayavku');
             });
         });
         jq_144(obj.options.forms.popUpFormSubmit).on('submit', '.our_form', function () {
@@ -73,18 +73,18 @@ class lpGeneratorService{
                 if (obj.options.forms.downloadSpecial && obj.options.forms.downloadSpecial[this.buttonID])  fileType = obj.options.forms.downloadSpecial[obj.buttonID];
                 obj.getFileFromForm(fileType);
                 jq_181('#byButtonsOverlay').overlay().close();
-                obj.options.yandex.yandexCounter.reachGoal('dwld_fullprice');
+                if (obj.options.yandex.yandexTrigger) obj.options.yandex.yandexCounter.reachGoal('dwld_fullprice');
             });
         });
         jq_181(function ($) {
             $(obj.options.interface.mailSelector).click(function (e) {
                 e.preventDefault();
-                obj.options.yandex.yandexCounter.reachGoal('show_mail');
+                if (obj.options.yandex.yandexTrigger) obj.options.yandex.yandexCounter.reachGoal('show_mail');
                 $(obj.options.interface.mailSelector).html(obj.options.mail);
             });
             $(obj.options.interface.telefoneSelector).click(function (e) {
                 e.preventDefault();
-                obj.options.yandex.yandexCounter.reachGoal('show_phone');
+                if (obj.options.yandex.yandexTrigger) obj.options.yandex.yandexCounter.reachGoal('show_phone');
                 $(obj.options.interface.telefoneSelector).html(obj.options.telef);
             });
         });
