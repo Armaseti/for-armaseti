@@ -54,7 +54,7 @@ class lpGeneratorService{
             obj.buttonID = buttonID;
             if (obj.popUpTrigger){
                 var fileType = 'price';
-                if (obj.options.forms.downloadSpecial && obj.options.forms.downloadSpecial[this.buttonID])  fileType = obj.options.forms.downloadSpecial[obj.buttonID];
+                if (obj.options.forms.downloadSpecial && obj.options.forms.downloadSpecial[obj.buttonID])  fileType = obj.options.forms.downloadSpecial[obj.buttonID];
                 obj.getFileFromForm(fileType);
             } else {
                 jq_181(function ($) {
@@ -70,7 +70,7 @@ class lpGeneratorService{
                 $('#form_submit_message').css('display', 'none');
                 var fileType = 'price';
                 obj.popUpTrigger = true;
-                if (obj.options.forms.downloadSpecial && obj.options.forms.downloadSpecial[this.buttonID])  fileType = obj.options.forms.downloadSpecial[obj.buttonID];
+                if (obj.options.forms.downloadSpecial && obj.options.forms.downloadSpecial[obj.buttonID])  fileType = obj.options.forms.downloadSpecial[obj.buttonID];
                 obj.getFileFromForm(fileType);
                 jq_181('#byMouseScroll').overlay().close();
                 if (obj.options.yandex.yandexTrigger) obj.options.yandex.yandexCounter.reachGoal('dwld_popprice');
@@ -86,7 +86,7 @@ class lpGeneratorService{
                 $('#form_submit_message').css('display', 'none');
                 var fileType = 'price';
                 obj.popUpTrigger = true;
-                if (obj.options.forms.downloadSpecial && obj.options.forms.downloadSpecial[this.buttonID])  fileType = obj.options.forms.downloadSpecial[obj.buttonID];
+                if (obj.options.forms.downloadSpecial && obj.options.forms.downloadSpecial[obj.buttonID])  fileType = obj.options.forms.downloadSpecial[obj.buttonID];
                 obj.getFileFromForm(fileType);
                 jq_181('#byButtonsOverlay').overlay().close();
                 if (obj.options.yandex.yandexTrigger) obj.options.yandex.yandexCounter.reachGoal('dwld_fullprice');
