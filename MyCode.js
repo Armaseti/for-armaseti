@@ -18,7 +18,7 @@ class lpGeneratorService{
             },
             yandex: {
                 yandexCounter: options.yandex.yandexCounter,
-                yandexTrigger: options.yandex.yandexTrigger || true
+                yandexTrigger: options.yandex.yandexCounter ? true : false
             },
             forms: {
                 toLoadPopUpButtons: options.forms.toLoadPopUpButtons,
