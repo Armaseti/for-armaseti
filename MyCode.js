@@ -137,8 +137,8 @@ class lpGeneratorService{
                 obj.options.files.price="http://armasetiopt.ru/files/mail/_%d0%b0%d1%80%d0%bc%d0%b0%d1%81%d0%b5%d1%82%d0%b8_%d0%bf%d1%80%d0%b0%d0%b8%cc%86%d1%81.xlsx";
                 break;
             default:
-                obj.options.telef="+7(383)209-56-40";
-                obj.options.mail="armaseti-opt@yandex.ua";
+                obj.options.telef="+7(499)704-21-01";
+                obj.options.mail="opt-495@mail.ru";
                 obj.options.files.katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1d2SWV6MElCZkk";
                 obj.options.files.katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUW1UTmhWR0lkMm8";
                 obj.options.files.price="http://armasetiopt.ru/files/prices/rf/_%d0%b0%d1%80%d0%bc%d0%b0%d1%81%d0%b5%d1%82%d0%b8-%d0%b8%d0%bc%d0%bf%d0%be%d1%80%d1%82_%d0%bf%d1%80%d0%b0%d0%b8%cc%86%d1%81-%d0%bb%d0%b8%d1%81%d1%82.xlsx";
