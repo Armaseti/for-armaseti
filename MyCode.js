@@ -122,6 +122,34 @@ class lpGeneratorService{
                 obj.options.files.katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNVpua3NrZDRzWTA";
                 obj.options.files.price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdWp2dGxsRTF1Rlk";
                 break;
+            case 'arfya':
+                obj.options.telef="+7(495)137-58-03";
+                obj.options.mail="arma-seti-rf@list.ru";
+                obj.options.files.katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRXlUdHptNEhQLTA";
+                obj.options.files.katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNVpua3NrZDRzWTA";
+                obj.options.files.price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdWp2dGxsRTF1Rlk";
+                break;
+            case 'arfgoo':
+                obj.options.telef="+7(495)137-58-03";
+                obj.options.mail="arma-seti-rf@list.ru";
+                obj.options.files.katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRXlUdHptNEhQLTA";
+                obj.options.files.katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNVpua3NrZDRzWTA";
+                obj.options.files.price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdWp2dGxsRTF1Rlk";
+                break;
+            case 'ploya':
+                obj.options.telef="+7(499)704-30-22";
+                obj.options.mail="price-list-opt@mail.ru";
+                obj.options.files.katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRXlUdHptNEhQLTA";
+                obj.options.files.katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNVpua3NrZDRzWTA";
+                obj.options.files.price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdWp2dGxsRTF1Rlk";
+                break;
+            case 'plogoo':
+                obj.options.telef="+7(499)704-30-22";
+                obj.options.mail="price-list-opt@mail.ru";
+                obj.options.files.katalog_LD="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRRXlUdHptNEhQLTA";
+                obj.options.files.katalog_strizh="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRNVpua3NrZDRzWTA";
+                obj.options.files.price="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRdWp2dGxsRTF1Rlk";
+                break;
             case 'ya':
                 obj.options.telef="+7(383)207-86-29";
                 obj.options.mail="armaseti-opt@yandex.ru";
