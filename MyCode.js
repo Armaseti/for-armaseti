@@ -5,18 +5,22 @@ class lpGeneratorService{
         this.popUpTrigger = false;
         this.popUpOverlay = {};
         this.options = {
-            telef: '',
-            mail: '',
+            // свойства по умолчанию для телефонов и тд
+            telef: options.telef || '',
+            mail: options.mail || '',
             files: {
-                katalog_LD: '',
-                katalog_strizh: '',
-                price: ''
+                katalog_LD: options.files.katalog_LD || '',
+                katalog_strizh: options.files.katalog_strizh || '',
+                price: options.files.price || ''
             },
             interface: {
+                // css селектор #mail_text
                 mailSelector: options.interface.mailSelector,
+                // css селектор #tel_text
                 telefoneSelector: options.interface.telefoneSelector
             },
             yandex: {
+                // счетчик яндекса
                 yandexCounter: options.yandex.yandexCounter,
                 yandexTrigger: options.yandex.yandexCounter ? true : false
             },
