@@ -6,12 +6,24 @@ class lpGeneratorService{
         this.popUpOverlay = {};
         this.options = {
             // свойства по умолчанию для телефонов и тд
-            telef: options.telef || '',
-            mail: options.mail || '',
+            telef: options.telef || "+7(499)704-21-01",
+            mail: options.mail || "armasetilp@mail.ru",
             files: {
-                katalog_LD: options.files.katalog_LD || '',
-                katalog_strizh: options.files.katalog_strizh || '',
-                price: options.files.price || ''
+                katalog_LD:
+                    options.files &&
+                    options.files.katalog_LD ?
+                        options.files.katalog_LD :
+                        "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1d2SWV6MElCZkk",
+                katalog_strizh:
+                    options.files &&
+                    options.files.katalog_strizh ?
+                        options.files.katalog_strizh :
+                        "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUW1UTmhWR0lkMm8",
+                price:
+                    options.files &&
+                    options.files.price ?
+                        options.files.price :
+                        "http://armasetiopt.ru/files/prices/rf/_%D0%B0%D1%80%D0%BC%D0%B0%D1%81%D0%B5%D1%82%D0%B8_%D1%80%D1%84_%D0%BF%D1%80%D0%B0%D0%B8%CC%86%D1%81-%D0%BB%D0%B8%D1%81%D1%82_%28def%29.xlsx"
             },
             interface: {
                 // css селектор #mail_text
@@ -168,13 +180,6 @@ class lpGeneratorService{
                 obj.options.files.katalog_strizh="http://armasetiopt.ru/files/mail/Стриж LD.pdf";
                 obj.options.files.price="http://armasetiopt.ru/files/mail/_%d0%b0%d1%80%d0%bc%d0%b0%d1%81%d0%b5%d1%82%d0%b8_%d0%bf%d1%80%d0%b0%d0%b8%cc%86%d1%81.xlsx";
                 break;
-            default: {
-                obj.options.telef = obj.options.telef || "+7(499)704-21-01";
-                obj.options.mail = obj.options.mail || "armasetilp@mail.ru";
-                obj.options.files.katalog_LD = obj.options.files.katalog_LD || "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRc1d2SWV6MElCZkk";
-                obj.options.files.katalog_strizh = obj.options.files.katalog_strizh || "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=0BwqEBfJv4yPRUW1UTmhWR0lkMm8";
-                obj.options.files.price = obj.options.files.price || "http://armasetiopt.ru/files/prices/rf/_%D0%B0%D1%80%D0%BC%D0%B0%D1%81%D0%B5%D1%82%D0%B8_%D1%80%D1%84_%D0%BF%D1%80%D0%B0%D0%B8%CC%86%D1%81-%D0%BB%D0%B8%D1%81%D1%82_%28def%29.xlsx";
-            }
         }
         jq_144(function($){ // вcтавляет данные в форму страницы
             $(obj.options.interface.mailSelector).html('<a>'+obj.options.mail.replace(/@(.+)/,'@...')+'</a>');
